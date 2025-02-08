@@ -1,3 +1,6 @@
+#Semana 5 - Asignacion 1
+#Dayhan Garcia 19-1913
+
 def suma():
     print("Digite dos numeros a sumar: ")
     n1 = int(input("Primer numero: "))
