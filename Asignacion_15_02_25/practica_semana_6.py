@@ -3,7 +3,7 @@
 #Ejercicio 1: Multiplicar todos los elementos por 3
 #Dada una lista de números, multiplica todos los elementos por 3.
 numbers = [1,2,3,4,5]
-print(f"Ejercicio 3: {list(map(lambda n: n * 3, numbers))}")
+print(f"Ejercicio 1: {list(map(lambda n: n * 3, numbers))}")
 
 #Ejercicio 2: Filtrar números mayores a 10
 #Dada una lista de números, filtra los números que son mayores a 10.
@@ -23,7 +23,7 @@ print(f"Ejercicio 4: {list(filter(lambda word: word.startswith("p") , words04))}
 #Ejercicio 5: Calcular la longitud de cada palabra
 #Dada una lista de palabras, calcula la longitud de cada una.
 words05 = ["hola", "mundo", "python"]
-words_n_letters = {word05: len(words05) for word05 in words05}
+words_n_letters = {word: len(word) for word in words05}
 print(f"Ejercicio 5: {words_n_letters}")
 
 #Ejercicio 6: Filtrar palabras con longitud mayor a 4
@@ -49,4 +49,4 @@ print(f"Ejercicio 9: {list(map(lambda n: n+5, numbers09))}")
 #Ejercicio 10: Filtrar palabras que contienen la letra 'a'
 #Dada una lista de palabras, filtra aquellas que contienen la letra 'a'.
 words10 = ["hola", "mundo", "python", "vida"]
-print(f"Ejercicio 10: {list(filter(lambda word: "d" in word, words10))}")
+print(f"Ejercicio 10: {list(filter(lambda word: "a" in word, words10))}")
