@@ -1,4 +1,5 @@
-#Dayhan Garcia 19-1913
+# Dayhan Garcia dg19-1913
+#https://github.com/xodayz/PythonProyect
 
 calorias_pedro = (2000, 1800, 2100, 2000, 1900, 2500, 2200)
 calorias_carla = (1500, 1600, 1700, 1550, 1500, 1800, 1900)

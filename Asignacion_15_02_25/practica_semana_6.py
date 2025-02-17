@@ -1,4 +1,5 @@
 # Dayhan Garcia dg19-1913
+#https://github.com/xodayz/PythonProyect
 
 #Ejercicio 1: Multiplicar todos los elementos por 3
 #Dada una lista de números, multiplica todos los elementos por 3.
