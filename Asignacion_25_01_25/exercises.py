@@ -1,3 +1,6 @@
+# Dayhan Garcia dg19-1913
+#https://github.com/xodayz/PythonProyect
+
 def numberSense():
     num = int(input("Digit a number:"))
     if num < 0:

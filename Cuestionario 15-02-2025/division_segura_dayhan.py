@@ -1,3 +1,6 @@
+# Dayhan Garcia dg19-1913
+#https://github.com/xodayz/PythonProyect
+
 def division_segura(a, b):
     try:
         a = float(a)

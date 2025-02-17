@@ -1,5 +1,5 @@
-#Semana 5 - Asignacion 1
-#Dayhan Garcia 19-1913
+# Dayhan Garcia dg19-1913
+#https://github.com/xodayz/PythonProyect
 
 def suma():
     print("Digite dos numeros a sumar: ")
