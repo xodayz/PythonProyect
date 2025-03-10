@@ -10,8 +10,9 @@ def loadProducts(file):
             for row in lector:
                 try:
                     products.append({
-                        'nombre': row['nombre'],
-                        'precio': float(row['precio'])
+                        'nombre': row['nombre_producto'],
+                        'precio': float(row['precio']),
+                        'descuento': float(row['porcentaje_descuento'])
                     })
                 except ValueError:
                     print(f"Error en la conversión de datos: {row}")
@@ -26,17 +27,15 @@ def averagePrice(products):
         return 0
     return sum(p['precio'] for p in products) / len(products)
 
-def applyDiscount(products, discount):
-    return list(map(lambda p: {**p, 'precio': round(p['precio'] * (1 - discount / 100), 2)}, products))
+def applyIndividualDiscount(products):
+    return list(map(lambda p: {**p, 'precio': round(p['precio'] * (1 - p['descuento'] / 100), 2)}, products))
 
-archivo_csv = 'data.csv'
+archivo_csv = 'productos.csv'
 productos = loadProducts(archivo_csv)
 
 if productos:
     print(f"Precio promedio: {averagePrice(productos):.2f}")
-    descuento = 5
-    discountedProducts = applyDiscount(productos, descuento)
-    print(f"Descuento: {descuento:.2f}")
-    print("Productos con descuento:")
+    discountedProducts = applyIndividualDiscount(productos)
+    print("Productos con descuento aplicado:")
     for p in discountedProducts:
         print(f"{p['nombre']}: {p['precio']}")
